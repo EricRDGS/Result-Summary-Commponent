@@ -1,0 +1,19 @@
+@media(max-width: 600px){
+    html{
+        height: auto;
+    }
+
+    .main-commponent{
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: -4px -4px 6px var(--neutral-light), 4px 4px 6px var(--neutral-light);
+    }
+
+    .main-commponent .result{
+        border-radius: 0 0 20px 20px;
+    }
+
+    .main-commponent .stats{
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,172 @@
+html{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk';
+    font-size: 18px;
+    max-width: 1440px;
+}
+
+.main-commponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 4px 6px var(--neutral-light);
+}
+
+.main-commponent .result{
+    text-align: center;
+    color: var(--neutral-pale);
+    width: 300px;
+    height: 425px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, var(--light-royal-bg), var(--light-slate-bg));
+}
+
+.main-commponent .result .user{
+    font-weight: 500;
+    color: var(--neutral-light);
+    margin: 14px 0;
+}
+
+.main-commponent .result .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 180px;
+    width: 180px;
+    border-radius: 200px;
+    background-image: linear-gradient(to bottom, var(--light-royal-bg), var(--light-slate-bg));
+}
+
+.main-commponent .result .circle .number-result{
+    font-size: 64px;
+}
+
+.main-commponent .result .circle .result-total{
+    font-size: 18px;
+    color: var(--neutral-light);
+}
+
+.main-commponent .result .description-result{
+    margin: 40px 30px;
+}
+
+.main-commponent .result .description-result .title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-commponent .result .description-result .text{
+    color: var(--neutral-light);
+}
+
+.main-commponent .stats{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    height: 425px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 4px 6px var(--neutral-light);
+}
+
+.main-commponent .summary{
+    margin: 20px 25px;
+}
+
+.main-commponent .details li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 15px 30px;
+    border-radius: 6px;
+}
+
+.main-commponent .details .name{
+    display: flex;
+}
+
+.main-commponent .details li .number-stats{
+    color: #000;
+    margin-left: 20px;
+}
+
+.main-commponent .details li .number-stats span{
+    color: var(--neutral-light);
+}
+
+.main-commponent .details .reaction{
+    color: var(--primary-light);
+    background-color: var(--primary-light-bg);
+}
+
+.main-commponent .details .name-reaction::before{
+    content: '';
+    background-image: url(../images/icon-reaction.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-commponent .details .memory{
+    color: var(--primary-mixed);
+    background-color: var(--primary-mixed-bg);
+}
+
+.main-commponent .details .name-memory::before{
+    content: '';
+    background-image: url(../images/icon-memory.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-commponent .details .verbal{
+    color: var(--primary-teal);
+    background-color: var(--primary-teal-bg);
+}
+
+.main-commponent .details .name-verbal::before{
+    content: '';
+    background-image: url(../images/icon-verbal.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-commponent .details .visual{
+    color: var(--primary-cobalt);
+    background-color: var(--primary-cobalt-bg);
+}
+
+.main-commponent .details .name-visual::before{
+    content: '';
+    background-image: url(../images/icon-visual.svg);
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main-commponent .stats .btn{
+    align-self: center;
+    width: 240px;
+    height: 45px;
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to top, var(--light-royal-bg), var(--light-slate-bg));
+    margin: 30px;
+}
+
+.main-commponent .stats .btn:hover{
+    cursor: pointer;
+    background: var(--neutral-dark);
+}
